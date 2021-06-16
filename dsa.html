@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="style.css">
+
+        <title>Data Structure and Algorithms</title>
+    </head>
+
+    <body>
+        <section class="main-section-lab">
+            <nav class="main-nav">
+              <ul class="main-nav-container">
+                  <li><a href=".">CoderCat</a></li>
+                  <li><a href="labs.html">Labs</a></li>
+                  <li><a href="achievements.html">Achievements</a></li>
+                  <li><a href="project.html">Projects</a></li>
+              </ul>
+            </nav>
+        </section>
+
+        <section class="dsaQues">
+            <div class="dsaQues1 borderBtm">
+                <h1>Hash Tables</h1>
+                <h2>Hash table Using Array</h2>
+                <p>
+                    **<strong>Load Factor</strong>**<br>
+                    -describe how full a hash table is<br>
+                    -number of items / capacity = size / capacity<br>
+                    -used to decide when to resize array backing the hash tables<br>
+                    -too low = lots of empty space<br>
+                    -too high = increase likelihood of collisions<br><br>
+
+                    Hash table can be implemented using Array. To do so, we have to create an array first.<br><br>
+
+                    We then have to define how should the elements to be inserted into the array be hashed
+
+                    using the <strong>hashKey()</strong> method. <br><br>
+
+                    **But this will cause a problem!** <br>
+
+                    For example, when the hash key is defined based on the length of String,
+                    two String with same length() will be occupying the same index of the array and this 
+                    will cause a collision.
+                </p>
+
+                <img src="Images/hashtable1.jpg">
+                <img src="Images/hashtable2.jpg">
+                <img src="Images/hashtable3.jpg">
+                <img src="Images/hashtable4.jpg">
+
+
+                <p>
+                    **To solve this problem!**<br>
+
+                    Implement  <strong>Linear Probing</strong>, it simply means increasing the hash key in linear order 
+                    until it reaches a suitable index to be inserted. 1 probe means increase the hash key by 1.<br><br>
+
+                    Code above solved the collision issue.  When both a collision happened and the hash
+                     key is equals to the length of the array, there is no more space to insert the new
+                      item so we will start at the front of the array to find a suitable position to store 
+                      the new item.<br><br>
+
+                    **Worst case:  O(n) time complexity**<br>
+
+                    In the worst case scenario we have to traverse the array to find a suitable index to 
+                    insert the item.<br><br>
+
+                    **Better way?**<br>
+
+                    Decrease the probes used by implementing a better hashing method.<br><br>
+
+                    Other strategy to deal with collision?<br>
+
+                    **Chaining!**
+
+
+                </p>
+            </div>
+
+            <div class="dsaQues2 borderBtm">
+                <h1>Bubble Sort</h1>
+                <p>Selection sort as the name suggested, select an element that is largest at each iteration and place it at the rightmost position.</p>
+                <p>Array = [20, 35, -15, 7, 55, 1, -22]</p>
+                <img src="Images/bubblesort.jpg">
+                <ol>
+                    <p>Steps:</p>
+                    <li>Set 20 as the current largest element, compare it with 35.</li>
+                    <li>35 is greater than 20, so the current largest number is 35.</li>
+                    <li>Compare -15 with 35.</li>
+                    <li>35 is greater than -15, so the largest number remains unchanged.</li>
+                    <li>Keep comparing until it meets a greater number.</li>
+                    <li>After all the comparisons, the largest number for this iteration is 55 and the last index position is 6.</li>
+                    <li>So 55 will be placed at index position 6 because it is the largest.</li>
+                    <li>Continue to find the second largest and placed it at index 5, third largest at index 4 and so on.</li>
+                </ol>
+            </div>
+
+            
+            <div class="dsaQues3 borderBtm">
+                <h1>Insertion Sort</h1>
+                <p>Insertion sort takes an element form the array starting from element with index position of 1, compare it to all the elements at the left and insert it to the correct position.</p>
+                <p>Example:</p>
+                <p>Array = [20, 35, -15, 7, 55, 1, -22]</p>
+                <img src="Images/insertionsort.jpg">
+                <ol>
+                    <p>Steps:</p>
+                    <li>The first element that is unsorted will be set to the element of index positio 1 because the element at index position 0 has no element to compare.</li>
+                    <li>Compare 35 with the element on its left which is 20.</li>
+                    <li>20 is not greater than 35, so no change is needed.</li>
+                    <li>Now compate -15 with elements at its left side.</li>
+                    <li>Compare -15 with 35.</li>
+                    <li>35 is greater than -15, so 35 will now take over the position of -15.</li>
+                    <li>Compate -15 with 20.</li>
+                    <li>20 is greater than -15, so 20 will now shift its position to the right by 1.</li>
+                    <li>Since there are no element left to be compared, -15 will be placed at index position 0.</li>
+                    <li>After the first iteration, the array will become.<br>[-15, 20, 35, 7, 55, 1, -22] </li>
+                    <li>Continue to compare 7, 55, 1, -22 to its left elements until the array is sorted.</li>
+
+
+                </ol>
+            
+            </div>
+
+            
+            <div class="dsaQues4 borderBtm">
+                <h1>Selection Sort</h1>
+                <p>Selection sort as the name suggested, select an element that is largest at each iteration and place it at the rightmost position.</p>
+                <p>Array = [20, 35, -15, 7, 55, 1, -22]</p>
+                <img src="Images/selectionsort.jpg">
+                <ol>
+                    <li>Set 20 as the current largest element, compare it with 35.</li>
+                    <li>35 is greater than 20, so the current largest number is 35.</li>
+                    <li>Compare -15 with 35.</li>
+                    <li>35 is greater than -15, so the largest number remains unchanged.</li>
+                    <li>Keep comparing until it meets a greater number.</li>
+                    <li>After all the comparisons, the largest number for this iteration is 55 and the last index position is 6.</li>
+                    <li>So 55 will be placed at index position 6 because it is the largest.</li>
+                    <li>Continue to find the second largest and placed it at index 5, third largest at index 4 and so on.</li>
+                </ol>
+            
+            
+            </div>
+
+        </section>
+
+    </body>
+</html>
