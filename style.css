@@ -9,9 +9,10 @@ body{
 }
 
 .main-section{
-    background-image: url(Images/codingBackground.jpeg);
+    /* background-image: url(Images/whitebgbluehexa.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position:top; */
 }
 
 
@@ -19,27 +20,42 @@ body{
 
 .main-nav-container{
     display:flex;
-    justify-content: center;
+    justify-content: space-between;
     margin:0;
     list-style:none;
     font-size: 1.2em;
     height: 10%;
+    background-color: #005686;
     /* width:80%; */
 }
 
 .main-nav-container > li{
-    padding: 20px;
-    border-bottom: 2px solid white;
+    /* padding: 20px;
+    border-bottom: 2px solid #2F4960; */
+    font-family: Brush Script MT, Brush Script Std, cursive;
+    font-size: 2em;  
+    padding-top: 20px; 
+    color: white;
 }
 
 li > a{
     font-size: 1.5em;
-}
-
-li > a{
-    color: #FFF;
+    color: white;
     text-decoration: none;
 }
+
+#labsnav{
+    text-align: center;
+    /* height: 3vh; */
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    margin-top: 2vh;
+    margin-right: 2vw;
+    /* background-color:#239de8 ;
+    border: 1px solid #239de8; */
+}
+
+
 
 @media only screen and (max-width: 500px) {
     .main-nav-container{
@@ -61,9 +77,8 @@ li > a{
 
 }
 
-.main-nav-container > li:hover{
-    background-image: linear-gradient(#817984,#a99fa2,#b8adad);
-    opacity: 0.8;
+.main-nav-container > li>a:hover{
+    color: #239de8;
 }
 
 
@@ -74,17 +89,17 @@ li > a{
 
 .title{
     
-    height: 600px;
+    height: 650px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    color: #FFF;
+    color: black;
+    background-color: #F7F9FB;
 }
 
 
 .main-container{
-    
     display: flex;
     flex-direction: column;
     align-items: center; 
@@ -98,6 +113,7 @@ li > a{
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 50%;
+    border: 0.2px solid black;
     opacity: 0.9;
     margin-top: 2vh;
 }
@@ -115,14 +131,14 @@ li > a{
 
 .console-container {
    
-    font-family:Khula;
+    font-family:New Century Schoolbook, TeX Gyre Schola, serif;
     font-size:3em;
     text-align:center;
     height:100px;
     width:600px;
     display:block;
     position:relative;
-    color:white;
+    color:#205B7A;
     top:30px;
     bottom:0;
     padding-left:30px;
@@ -143,21 +159,43 @@ li > a{
 /*-----------------Introduction---------------*/
 .self-introduction-section{
     background-color: white;
-    font-family: 'Lora', serif;
+    font-family: New Century Schoolbook, TeX Gyre Schola, serif;
     
+}
+
+.self-intro{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;     
+    color:  white;
+    background-color: #239DE8;
+    height:40vh;
+    padding-top: 10vh;
     
+}
+
+.self-intro > h2{
+    font-size: 2em;
 }
 
 /*-----------------End of Introduction---------------*/
 
 /* Skills */
 .skills-container{
+    /* margin-top: 10vh; */
     color: #283e51;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-    font-size: 20px;
+    font-size: 1em;
+    
     /* position: relative; */
     text-align: center;
+    /* background-color: white; */
+    /* background-image: url(Images/whitebgbluehexa.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    background */
+
 } 
 
 /* .skills-background{
@@ -170,7 +208,9 @@ li > a{
     background-size: 100%;
 } */
 
+
 .skillsElement{
+    
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -178,15 +218,20 @@ li > a{
     padding: 80px;
     margin: 40px;
     border-radius: 12px;
+    height: 60vh;
     
     background-color:white;
-    background-image: linear-gradient(#d7e1ec,#ffffff);
-    border-bottom: 3px solid grey; 
+    /* background-image: linear-gradient(#d7e1ec,#ffffff); */
+
+    border-bottom: 3px solid #005686; 
     
 }
 
 .skillsElement:hover{
-    background-image: linear-gradient(#f5f7fa,#b8c6db);
+    /* background-image: linear-gradient(#f5f7fa,#b8c6db);
+     */
+     background-color: #F7F9FB;
+
 }
 
 .java-logo{
@@ -217,7 +262,7 @@ li > a{
     background-repeat: no-repeat;
 }
 
-.etc-logo{
+/* .etc-logo{
     height: 70px;
     width: 70px;
     background: url(Images/etc.svg);
@@ -264,9 +309,160 @@ li > a{
     margin-left: 15px;
     font-size: 1.2em;
 
-}
+} */
 
 /*-----------------End of skills---------------*/
+
+/*------------Projects in index.html-----------*/
+
+.projects{
+   margin: 0 auto;
+   background-color: #239DE8;
+   width: 90vw;
+   border-radius: 15px;
+   height: 45vh;
+}
+
+.projects > h1{
+    padding-top: 10vh;
+    margin-top: 20vh;
+    text-align: center;
+    font-size: 2em;
+    color: white;
+}
+
+
+.projectcontainer {
+    /* border: 1em solid #fff;
+    border-bottom: 4em solid #fff;
+    border-radius: .25em; */
+    display: flex;
+    justify-content: center;
+    border-radius: 15px;
+    /* box-shadow: 1em 1em 2em .25em rgba(0,0,0,.2); */
+    margin: 1em auto;
+    opacity: 0;
+    transform: translateY(4em) ;
+    transition: transform 4s .25s cubic-bezier(0,1,.3,1),
+                opacity .3s .25s ease-out;
+    max-width: 1000px;
+    width: 95%;
+    height:60vh;
+    will-change: transform, opacity;
+    background-color: #F7F9FB;
+    
+  }
+
+  .projectcontainer.is-visible {
+    opacity: 1;
+    
+  }
+
+  .projectcontainer > img{
+      margin: auto;
+      margin-left: 3vw;
+      height: 30vh;
+      width: 30vw;
+  }
+
+
+  .projectdesccontainer{
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      
+      align-items: center;
+  }
+
+  .projectdesccontainer > a > button{
+      border: 1px solid ;
+      border-radius: 15px;
+      border-color: #239DE8;
+      background-color: #239DE8;
+      color: #ffffff;
+      height: 2em;
+  }
+
+  .projectdesccontainer > button:hover{
+      
+    
+    background-color: #1D83C2;
+    
+}
+
+
+
+
+.sortingprojectcontainer {
+    /* border: 1em solid #fff;
+    border-bottom: 4em solid #fff;
+    border-radius: .25em; */
+    display: flex;
+    justify-content: center;
+    border-radius: 15px;
+    /* box-shadow: 1em 1em 2em .25em rgba(0,0,0,.2); */
+    margin: 1em auto;
+    opacity: 0;
+    transform: translateY(4em) ;
+    transition: transform 4s .25s cubic-bezier(0,1,.3,1),
+                opacity .3s .25s ease-out;
+    max-width: 1000px;
+    width: 95%;
+    height:60vh;
+    will-change: transform, opacity;
+    background-color: #F7F9FB;
+    
+  }
+
+  .sortingprojectcontainer.is-visible {
+    opacity: 1;
+    
+  }
+
+  .sortingprojectcontainer > img{
+      margin: auto;
+      margin-left: 3vw;
+      height: 30vh;
+      width: 30vw;
+  }
+
+
+  .sortingprojectdesccontainer{
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      
+      align-items: center;
+  }
+
+  .sortingprojectdesccontainer > a > button{
+      border: 1px solid ;
+      border-radius: 15px;
+      border-color: #239DE8;
+      background-color: #239DE8;
+      color: #ffffff;
+      height: 2em;
+  }
+
+  .sortingprojectdesccontainer > button:hover{
+    background-color: #1D83C2;
+}
+
+
+/* .moreMe{
+    margin: 120vh auto;
+    margin-bottom: 0;
+    text-align: center;
+    background-color: #239DE8;
+    color:white;
+    width: 90vw;
+    border-radius: 15px;
+    height: 20vh;
+} */
+
+/*------------End of projects in index.html-----------*/
 
 
 /* Footer */
@@ -279,15 +475,16 @@ footer{
 /*-----------------labs.html---------------*/
 .main-section-lab{
     height: 100px;
-    background-image: url(Images/macbook.jpg);
+    /* background-image: url(Images/macbook.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: bottom;
+    background-position: bottom; */
 }
 
-.labsContainer{
-    font-size: 3em;
+.labs-container{
+    font-size: 1em;
     font-family: 'Lora', serif;
+    margin-top: -10px;
 }
 
 .programmingQuesContainer{
@@ -332,12 +529,14 @@ footer{
     width: 100%;
     text-align: center;
     border-radius: 25px;
-    border: 1px solid #555;
+    border: 1px solid #239DE8;
+    background-color: #239DE8;
+    color:white;
     
 }
 
 .programBtn > button:hover{
-    background-color:ghostwhite;
+    background-color:#1D83C2;
 }
 
 .DSAContainer{
@@ -377,7 +576,9 @@ footer{
 }
 
 .DSABtn > button{
-    border: 1px solid #555;
+    border: 1px solid #239DE8;
+    background-color: #239DE8;
+    color:white;
     height: 100%;
     width: 100%;
     text-align: center;
@@ -385,7 +586,7 @@ footer{
 }   
 
 .DSABtn > button:hover{
-    background-color:ghostwhite;
+    background-color:#1D83C2;
 }
 
 
@@ -431,11 +632,13 @@ footer{
     width: 100%;
     text-align: center;
     border-radius: 25px;
-    border: 1px solid #555;
+    border: 1px solid #239DE8;
+    background-color: #239DE8;
+    color:white;
 }    
 
 .SrvJSPBtn > button:hover{
-    background-color:ghostwhite;
+    background-color:#1D83C2;
 }
 
 
@@ -629,9 +832,10 @@ footer{
 
 /* programming, dsa and servletjsp .html */
 .programQues{
-      background-color: #555;
+      background-color: white;
       display: flex;
-      color: white;
+      color: black;
+      flex-direction: column;
       
       /* border: 1px solid red; */
 }
@@ -642,14 +846,14 @@ footer{
 
 
 .dsaQues{
-    background-color: #555;
+    background-color: white;
     display: flex;
     flex-direction: column;
-    color: white;
+    color: black;
 }
 
 .borderBtm{
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid black;
 }
 
 .dsaQues1 > img{
@@ -658,16 +862,16 @@ footer{
 }
 
 .srvJsp{
-    background-color: #555;
+    background-color: white;
     display:flex;
     flex-direction: column;
-    color: white;
+    color: black;
 }
 /* End of programming, dsa and servletjsp .html */
 
 
 /*project.html*/
-.bugreportingSystem{
+/* .bugreportingSystem{
     position: relative;
     height: 44vh;
     width: 100%;
@@ -736,7 +940,7 @@ footer{
     display: inline-block;
     left: 100%;
     position: relative;
-}
+} */
 
 
 /*End of project.html*/
@@ -744,8 +948,8 @@ footer{
 
 /*bugtrackingProject.html*/
 .project{
-    background-color: #555;
-    color:white;
+    background-color: white;
+    color:black;
 }
 
 .project h1{
@@ -899,7 +1103,7 @@ footer{
 }
 
 /*sortingAnimation.html*/
-.back{
+/* .back{
     position: absolute;
     top:0%;
     left:0%;
@@ -936,7 +1140,7 @@ footer{
 .backarrow::before{
     top:8px;
     transform: rotate(-125deg);
-}
+} */
 
 .title_bg{
     border: 1px solid #f8ceec;

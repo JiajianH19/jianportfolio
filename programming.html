@@ -16,9 +16,9 @@
             <nav class="main-nav">
               <ul class="main-nav-container">
                   <li><a href=".">CoderCat</a></li>
-                  <li><a href="labs.html">Labs</a></li>
+                  <!-- <li><a href="labs.html">Labs</a></li>
                   <li><a href="achievements.html">Achievements</a></li>
-                  <li><a href="project.html">Projects</a></li>
+                  <li><a href="project.html">Projects</a></li> -->
               </ul>
             </nav>
         </section>
@@ -64,7 +64,39 @@
 
                     Check the four sides of the current position and return true is either one of the conditions is met.<br><br>
                 </p>
+                <hr>
             
+            </div>
+
+            <div class="programQues2-container">
+                <h1>Adding without Arithmetic operators</h1>
+                <img src="Images/sumnoarithmetic.png" style="width: 50vw; height: 60vh;">
+                <p>Just a few lines of code, Easy right!<br>But what on earth is going on here</p>
+                <p>Lets perform addition on number 1 and 2</p>
+                <p>The binary representation of 1 and 2 are
+                    0001 and 0010
+                </p>
+                <p>Peforming an AND operation will give us the
+                    number 0000, means there is no carry
+                </p>
+                <p>Now we will perform a OR operation to get
+                    0011
+                </p>
+                <p>Since there are only 0's in the carry, no carry
+                    means the "addition" has completed.
+                </p>
+                <p>An easy way to approach this question is to
+                    think of & AND operation as a way to find the carry
+                    , which helps to determine how many iterations
+                    should be performed, because after each iteration,
+                    the carry will be shifted left by 1 until we are left
+                    with 0's.<br>
+                    ^ XOR helps us to get the sum of that iteration, we should
+                    not worry about the carry because it has been stored and taken cared of
+                    from the AND operaiton performed earlier.
+                    <br>
+                
+                </p>
             </div>
 
         </section>

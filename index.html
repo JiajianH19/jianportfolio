@@ -18,9 +18,9 @@
         <nav class="main-nav">
           <ul class="main-nav-container">
               <li><a href=".">CoderCat</a></li>
-              <li><a href="labs.html">Labs</a></li>
-              <li><a href="achievements.html">Achievements</a></li>
-              <li><a href="project.html">Projects</a></li>
+              <li id="labsnav"><a href="labs.html">Labs</a></li>
+              <!-- <li><a href="achievements.html">Achievements</a></li> -->
+              <!-- <li><a href="project.html">Projects</a></li> -->
               
           </ul>
         </nav>
@@ -48,7 +48,15 @@
               
             </div>
           </div> -->
-  
+          <div class="self-intro view-on-scroll">
+            <h2>Hi! I am Jian, a self-taught web developer.</h2>
+            <h3>I have been learning different programming languages
+              and is still actively <br>taking online courses to enhance my skills.
+              Learning different things<br> have always been my hobbies, from
+              rubik's cube to sports, musical <br>instruments.
+
+            </h3>
+          </div>
           <div class="skills-container">
             <div class="skillsElement java-container">
               <div class="java-logo"></div>
@@ -71,12 +79,10 @@
             <div class="skillsElement javaWeb-container">
               <div class="javaWeb-logo"></div>
               <h4>Java Dynamic Webpage</h4><br>
-              <p>Servlet</p>
-              <p>JSP</p>
-              <p>JDBC</p>
+              <p>Servlet<br>JSP</p>
             </div>
   
-            <div class="skillsElement etc-container">
+            <!-- <div class="skillsElement etc-container">
               <div class="etc-logo"></div>
               <p>Name: Hwa Jia Jian<br><br>
                  Course: Bachelor of Technology<br>
@@ -98,13 +104,60 @@
                 <div class="phonelogo logo">
                   <img src="Images/smartphone-call.svg">
                 </div>
-              <div class="phonenumber">0172225095</div>
+              <div class="phonenumber">0172225095</div> -->
     
 
             </div>
   
           </div>
       </section>
+
+      <section class="projects">
+        <h1>Projects</h1>
+        <div class="projectcontainer view-on-scroll">
+          <img src="Images/bugtrackinghome.jpg">
+          <div class="projectdesccontainer">
+            <h2>Bug Tracking System</h2>
+            <p>A simple program that view, add employees,
+              view, add project, report bugs found
+                using Java Web and JDBC
+            </p>
+
+            <a href="bugtrackingProject.html"><button type="button">Learn More!</button></a>
+          </div>
+        </div>
+
+
+        <div class="projectcontainer view-on-scroll">
+          <img src="Images/sortingalgohome.jpg">
+          <div class="projectdesccontainer">
+            <h2>Sorting Algorithm Visualizer</h2>
+            <p>A simple program that illustrates how
+              bubble sort, insertion sort and selection
+              sort work.
+            </p>
+
+            <a href="sortingAlgo.html"><button type="button">Learn More!</button></a>
+          </div>
+        </div>
+
+
+        <div class="projectcontainer view-on-scroll">
+          <img src="Images/chemistryDungeon.png">
+          <div class="projectdesccontainer">
+            <h2>Chemistry Dungeon</h2>
+            <p>Just a fun chemistry educational card game.
+              Score by correctly playing all element cards that are required to
+              form selected compound. Build using Unity Engine and C# language.
+            </p>  
+          </div>
+        </div>
+        
+      </section>
+
+      <!-- <section class="moreMe">
+        <h2>More about me</h2>
+      </section> -->
 
       <!-- <section class="skills">
         <div class="skills-container">
@@ -135,8 +188,10 @@
       </section> -->
       <script type= "text/javascript" src="indexScript.js"></script>
       <script>
-        consoleText(['Hey There!', 'I am Jian', 'A passionate programmer'], 'titleText',['white','white','white']);
+        consoleText(['Hey There!', 'I am Jian', 'A passionate programmer'], 'titleText',['black','black','black']);
     </script>
-      <footer>Made by CoderCat</footer>
+
+      <script type="text/javascript" src="projectScript.js"></script>
+      <!-- <footer>Made by CoderCat</footer> -->
     </body>
 </html>
